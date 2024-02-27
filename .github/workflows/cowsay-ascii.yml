@@ -10,7 +10,7 @@ jobs:
               run: sudo apt install cowsay -y
 
             - name: Adding Cowsay Lion version
-              run: cowsay -f lion "Run for cover, ROAR." > lion.txt
+              run: cowsay -f lion "Run for cover, ROAR." >> lion.txt
 
             - name: Display the content
               run: cat lion.txt
