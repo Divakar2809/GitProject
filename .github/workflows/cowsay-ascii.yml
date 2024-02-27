@@ -1,0 +1,20 @@
+name: Cowsay-ASCII
+on:
+    push
+
+jobs:
+    First_Job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Install Cowsay
+              run: sudo apt install cowsay -y
+
+            - name: Adding Cowsay Lion version
+              run: cowsay -f lion "Run for cover, ROAR." > lion.txt
+
+            - name: Display the content
+              run: cat lion.txt
+
+            - name: List the file in the repo
+              run: ls -ltrh
+         
