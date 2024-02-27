@@ -9,11 +9,11 @@ jobs:
             - name: Install Cowsay
               run: sudo apt install cowsay -y
 
-            - name: Adding Cowsay Lion version
-              run: cowsay -f lion "Run for cover, ROAR." >> lion.txt
+            - name: Adding Cowsay dragon version
+              run: cowsay -f dragon "Run for cover, ROAR." >> dragon.txt
 
             - name: Display the content
-              run: cat lion.txt
+              run: cat dragon.txt
 
             - name: List the file in the repo
               run: ls -ltrh
